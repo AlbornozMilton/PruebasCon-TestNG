@@ -30,7 +30,7 @@ public class BombieriAccessTest {
   
   @BeforeTest
   public void beforeTest() {
-	  System.getProperties().setProperty("webdriver.chrome.driver", "C:\\Users\\Bombieri5\\Downloads\\Instaladores\\chromedriver_win32\\chromedriver.exe");
+	  System.getProperties().setProperty("webdriver.chrome.driver", "src\\test\\resources\\WebDrivers\\chromedriver.exe");
 		 driver = new ChromeDriver();
   }
 
