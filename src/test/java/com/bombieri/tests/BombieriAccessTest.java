@@ -19,12 +19,6 @@ public class BombieriAccessTest {
 	    driver.findElement(By.name("q")).click();
 	    driver.findElement(By.name("q")).sendKeys("bombieri");
 	    driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		
-		driver.findElement(By.cssSelector("div:nth-child(2) > .rc .LC20lb")).click();
-		driver.findElement(By.cssSelector(".inner-nav > li:nth-child(1) > a")).click();
-		driver.findElement(By.cssSelector(".inner-nav > li:nth-child(2) > a")).click();
-		driver.findElement(By.cssSelector(".inner-nav > li:nth-child(1) > a")).click();
-		driver.findElement(By.cssSelector("li:nth-child(5) > a")).click();
 	  
   }
   
