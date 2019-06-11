@@ -15,15 +15,15 @@ import org.testng.annotations.AfterTest;
 public class AccesoAPaginaBombieriTest {
 	
 	WebDriver driver;
-	WebDriverWait wait;
+	//WebDriverWait wait;
 	
 	@Test
 	public void test() {
 		driver.get("https://www.google.com/");
-		driver.findElement(By.name("q")).sendKeys("bombieri");
+		driver.findElement(By.name("q")).sendKeys("bombieri software factory");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		driver.findElement(By.className("LC20lb")).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("custom-collapse")));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("custom-collapse")));
 		Assert.assertTrue(driver.findElement(By.id("custom-collapse")).isDisplayed());
 	}
   
@@ -31,7 +31,7 @@ public class AccesoAPaginaBombieriTest {
 	public void beforeTest() {
 		System.getProperties().setProperty("webdriver.chrome.driver", "src\\test\\resources\\WebDrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver,30);
+		//wait = new WebDriverWait(driver,30);
 	}
 
 	@AfterTest
