@@ -19,7 +19,7 @@ public class AccesoAPaginaBombieriTest {
 		driver.get("https://www.google.com/");
 		driver.findElement(By.name("q")).sendKeys("bombieri");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		driver.findElement(By.cssSelector(".g > div > div > .rc .LC20lb")).click();		
+		driver.findElement(By.className("LC20lb")).click();
 		Assert.assertTrue(driver.findElement(By.id("custom-collapse")).isDisplayed());
 	}
   
