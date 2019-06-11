@@ -19,10 +19,10 @@ public class AccesoAPaginaBombieriTest {
 	
 	@Test
 	public void test() {
-		driver.get("https://www.google.com/");
-		driver.findElement(By.name("q")).sendKeys("bombieri software factory");
-		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		driver.findElement(By.className("LC20lb")).click();
+		driver.get("http://www.bombieri.com.ar/?lang=spanish");
+		//driver.findElement(By.name("q")).sendKeys("bombieri software factory");
+		//driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		//driver.findElement(By.className("LC20lb")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("custom-collapse")));
 		Assert.assertTrue(driver.findElement(By.id("custom-collapse")).isDisplayed());
 	}
