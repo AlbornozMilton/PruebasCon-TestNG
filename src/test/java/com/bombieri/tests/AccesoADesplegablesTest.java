@@ -26,11 +26,11 @@ public class AccesoADesplegablesTest {
 	
 	@Test
 	public void f() {
-		driver.get("https://es-la.facebook.com/");
+		driver.get("https://www.bombieri.com.ar/?lang=spanish");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.id("email")).sendKeys("probandoooo@gmail.gmail.com");
-		//driver.findElement(By.xpath("//a[contains(@href,'#')]")).click();
-		//driver.findElement(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")).click();
+		//---------------------driver.findElement(By.id("email")).sendKeys("probandoooo@gmail.gmail.com");
+		driver.findElement(By.xpath("//a[contains(@href,'#')]")).click();
+		driver.findElement(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")).click();
 	}
   
 	@BeforeTest
