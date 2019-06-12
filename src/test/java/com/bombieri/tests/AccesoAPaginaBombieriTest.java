@@ -24,6 +24,7 @@ public class AccesoAPaginaBombieriTest {
 		//driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		//driver.findElement(By.className("LC20lb")).click();
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("custom-collapse")));
+		wait.until(ExpectedConditions.elementToBeClickable (By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/contact')]")));
 		driver.findElement(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/contact')]")).click();
 		//Assert.assertTrue(driver.findElement(By.id("custom-collapse")).isDisplayed());
 	}
