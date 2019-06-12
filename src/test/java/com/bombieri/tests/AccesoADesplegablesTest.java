@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
@@ -26,6 +27,7 @@ public class AccesoADesplegablesTest {
 	@Test
 	public void f() {
 		driver.get("http://www.bombieri.com.ar/?lang=spanish");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
 		driver.findElement(By.xpath("//a[contains(@href,'#')]")).click();
 		driver.findElement(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")).click();
 	}
