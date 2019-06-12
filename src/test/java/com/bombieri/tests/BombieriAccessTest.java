@@ -18,9 +18,7 @@ public class BombieriAccessTest {
 	    driver.manage().window().maximize();
 	    driver.findElement(By.name("q")).click();
 	    driver.findElement(By.name("q")).sendKeys("bombieri");
-	    driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-	    
-	  
+	    driver.findElement(By.name("q")).sendKeys(Keys.ENTER);  
   }
   
   @BeforeTest
