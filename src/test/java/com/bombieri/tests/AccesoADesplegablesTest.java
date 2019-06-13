@@ -35,9 +35,9 @@ public class AccesoADesplegablesTest {
   
 	@BeforeTest
 	public void beforeTest() throws MalformedURLException {
-		//System.getProperties().setProperty("webdriver.chrome.driver", "src\\test\\resources\\WebDrivers\\chromedriver.exe");
-		//driver = new ChromeDriver();
-		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap.chrome());
+		System.getProperties().setProperty("webdriver.chrome.driver", "src\\test\\resources\\WebDrivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		//driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap.chrome());
 		
 	}
 
