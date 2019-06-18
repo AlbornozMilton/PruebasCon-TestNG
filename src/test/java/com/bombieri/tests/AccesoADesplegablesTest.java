@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -25,6 +26,7 @@ public class AccesoADesplegablesTest {
 	DesiredCapabilities cap;
 	
 	@Test
+
 	public void f() {
 		driver.get("https://www.bombieri.com.ar/?lang=spanish");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
